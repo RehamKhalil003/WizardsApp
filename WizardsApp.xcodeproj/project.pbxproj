@@ -22,13 +22,13 @@
 		BE14D5B32CAD7E4200A283E6 /* ElixirDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5B22CAD7E4200A283E6 /* ElixirDetails.swift */; };
 		BE14D5B82CAE7BAB00A283E6 /* BaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5B72CAE7BAB00A283E6 /* BaseContentView.swift */; };
 		BE14D5BA2CAEBB8300A283E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14D5B92CAEBB8300A283E6 /* LaunchScreen.storyboard */; };
-		BE14D5D02CAFDAC200A283E6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = BE14D5CF2CAFDAC200A283E6 /* Swinject */; };
 		BE14D6332CB018BD00A283E6 /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6322CB018BD00A283E6 /* CustomListCell.swift */; };
 		BE14D6362CB0266F00A283E6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6352CB0266F00A283E6 /* CoreDataHelper.swift */; };
 		BE14D6392CB0290900A283E6 /* CoreDataWizards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6372CB0290900A283E6 /* CoreDataWizards.xcdatamodeld */; };
 		BE14D63C2CB051A100A283E6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63B2CB051A100A283E6 /* NetworkMonitor.swift */; };
 		BE14D63E2CB082AD00A283E6 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63D2CB082AD00A283E6 /* ToastMessage.swift */; };
 		BE14D6402CB082C600A283E6 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63F2CB082C600A283E6 /* LoadingSpinner.swift */; };
+		BE14D6432CB1448E00A283E6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = BE14D6422CB1448E00A283E6 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,8 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE14D5D02CAFDAC200A283E6 /* Swinject in Frameworks */,
 				9CE8D56D6CAD408EA361E13A /* Pods_WizardsApp.framework in Frameworks */,
+				BE14D6432CB1448E00A283E6 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,6 @@
 				4E2259441AA43FA5E8FF39E0 /* Pods-WizardsApp.debug.xcconfig */,
 				8527B57BD8CC9F6DB7C90D6E /* Pods-WizardsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,7 +253,7 @@
 			);
 			name = WizardsApp;
 			packageProductDependencies = (
-				BE14D5CF2CAFDAC200A283E6 /* Swinject */,
+				BE14D6422CB1448E00A283E6 /* Swinject */,
 			);
 			productName = WizardsApp;
 			productReference = BE14D5892CAD204100A283E6 /* WizardsApp.app */;
@@ -285,7 +284,7 @@
 			);
 			mainGroup = BE14D5802CAD204100A283E6;
 			packageReferences = (
-				BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */,
+				BE14D6412CB1448E00A283E6 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = BE14D58A2CAD204100A283E6 /* Products */;
 			projectDirPath = "";
@@ -575,7 +574,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		BE14D6412CB1448E00A283E6 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
 			requirement = {
@@ -586,9 +585,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BE14D5CF2CAFDAC200A283E6 /* Swinject */ = {
+		BE14D6422CB1448E00A283E6 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = BE14D6412CB1448E00A283E6 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
