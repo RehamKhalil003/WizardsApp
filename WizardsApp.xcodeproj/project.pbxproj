@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CE8D56D6CAD408EA361E13A /* Pods_WizardsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46255CDC43CD8D52D0910F20 /* Pods_WizardsApp.framework */; };
 		BE14D58D2CAD204100A283E6 /* WizardsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D58C2CAD204100A283E6 /* WizardsAppApp.swift */; };
 		BE14D58F2CAD204100A283E6 /* WizardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D58E2CAD204100A283E6 /* WizardContentView.swift */; };
 		BE14D5912CAD204300A283E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE14D5902CAD204300A283E6 /* Assets.xcassets */; };
@@ -44,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		46255CDC43CD8D52D0910F20 /* Pods_WizardsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WizardsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2259441AA43FA5E8FF39E0 /* Pods-WizardsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WizardsApp.debug.xcconfig"; path = "Target Support Files/Pods-WizardsApp/Pods-WizardsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8527B57BD8CC9F6DB7C90D6E /* Pods-WizardsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WizardsApp.release.xcconfig"; path = "Target Support Files/Pods-WizardsApp/Pods-WizardsApp.release.xcconfig"; sourceTree = "<group>"; };
 		BE14D5892CAD204100A283E6 /* WizardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE14D58C2CAD204100A283E6 /* WizardsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardsAppApp.swift; sourceTree = "<group>"; };
 		BE14D58E2CAD204100A283E6 /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
@@ -73,17 +77,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE14D5D02CAFDAC200A283E6 /* Swinject in Frameworks */,
+				9CE8D56D6CAD408EA361E13A /* Pods_WizardsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46A928A0A97885D49745130C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E2259441AA43FA5E8FF39E0 /* Pods-WizardsApp.debug.xcconfig */,
+				8527B57BD8CC9F6DB7C90D6E /* Pods-WizardsApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C6B9F67449640D12DCD6169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46255CDC43CD8D52D0910F20 /* Pods_WizardsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE14D5802CAD204100A283E6 = {
 			isa = PBXGroup;
 			children = (
 				BE14D58B2CAD204100A283E6 /* WizardsApp */,
 				BE14D58A2CAD204100A283E6 /* Products */,
+				46A928A0A97885D49745130C /* Pods */,
+				5C6B9F67449640D12DCD6169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE14D59C2CAD204300A283E6 /* Build configuration list for PBXNativeTarget "WizardsApp" */;
 			buildPhases = (
+				8B83ACD7C5993A56EF42D7C6 /* [CP] Check Pods Manifest.lock */,
 				BE14D5852CAD204100A283E6 /* Sources */,
 				BE14D5862CAD204100A283E6 /* Frameworks */,
 				BE14D5872CAD204100A283E6 /* Resources */,
@@ -282,6 +308,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B83ACD7C5993A56EF42D7C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WizardsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE14D5852CAD204100A283E6 /* Sources */ = {
@@ -432,6 +483,7 @@
 		};
 		BE14D59D2CAD204300A283E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2259441AA43FA5E8FF39E0 /* Pods-WizardsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +518,7 @@
 		};
 		BE14D59E2CAD204300A283E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8527B57BD8CC9F6DB7C90D6E /* Pods-WizardsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
