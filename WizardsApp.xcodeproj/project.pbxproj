@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE14D58D2CAD204100A283E6 /* WizardsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D58C2CAD204100A283E6 /* WizardsAppApp.swift */; };
+		BE14D58F2CAD204100A283E6 /* WizardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D58E2CAD204100A283E6 /* WizardContentView.swift */; };
+		BE14D5912CAD204300A283E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE14D5902CAD204300A283E6 /* Assets.xcassets */; };
+		BE14D5942CAD204300A283E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE14D5932CAD204300A283E6 /* Preview Assets.xcassets */; };
+		BE14D5962CAD204300A283E6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5952CAD204300A283E6 /* Persistence.swift */; };
+		BE14D5A02CAD2A5D00A283E6 /* WizardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D59F2CAD2A5D00A283E6 /* WizardModel.swift */; };
+		BE14D5A32CAD2F6600A283E6 /* WizardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5A22CAD2F6600A283E6 /* WizardViewModel.swift */; };
+		BE14D5A52CAD592D00A283E6 /* WizardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5A42CAD592D00A283E6 /* WizardRepository.swift */; };
+		BE14D5AB2CAD5F4900A283E6 /* ElixirContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5AA2CAD5F4900A283E6 /* ElixirContentView.swift */; };
+		BE14D5AF2CAD629000A283E6 /* ElixirViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5AE2CAD629000A283E6 /* ElixirViewModel.swift */; };
+		BE14D5B12CAD77CA00A283E6 /* ElixirDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5B02CAD77CA00A283E6 /* ElixirDetailsContentView.swift */; };
+		BE14D5B32CAD7E4200A283E6 /* ElixirDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5B22CAD7E4200A283E6 /* ElixirDetails.swift */; };
+		BE14D5B82CAE7BAB00A283E6 /* BaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D5B72CAE7BAB00A283E6 /* BaseContentView.swift */; };
+		BE14D5BA2CAEBB8300A283E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14D5B92CAEBB8300A283E6 /* LaunchScreen.storyboard */; };
+		BE14D5D02CAFDAC200A283E6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = BE14D5CF2CAFDAC200A283E6 /* Swinject */; };
+		BE14D6332CB018BD00A283E6 /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6322CB018BD00A283E6 /* CustomListCell.swift */; };
+		BE14D6362CB0266F00A283E6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6352CB0266F00A283E6 /* CoreDataHelper.swift */; };
+		BE14D6392CB0290900A283E6 /* CoreDataWizards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE14D6372CB0290900A283E6 /* CoreDataWizards.xcdatamodeld */; };
+		BE14D63C2CB051A100A283E6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63B2CB051A100A283E6 /* NetworkMonitor.swift */; };
+		BE14D63E2CB082AD00A283E6 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63D2CB082AD00A283E6 /* ToastMessage.swift */; };
+		BE14D6402CB082C600A283E6 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14D63F2CB082C600A283E6 /* LoadingSpinner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE14D5CD2CAFDA9900A283E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE14D5892CAD204100A283E6 /* WizardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE14D58C2CAD204100A283E6 /* WizardsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardsAppApp.swift; sourceTree = "<group>"; };
+		BE14D58E2CAD204100A283E6 /* WizardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardContentView.swift; sourceTree = "<group>"; };
+		BE14D5902CAD204300A283E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE14D5932CAD204300A283E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE14D5952CAD204300A283E6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BE14D59F2CAD2A5D00A283E6 /* WizardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardModel.swift; sourceTree = "<group>"; };
+		BE14D5A22CAD2F6600A283E6 /* WizardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardViewModel.swift; sourceTree = "<group>"; };
+		BE14D5A42CAD592D00A283E6 /* WizardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardRepository.swift; sourceTree = "<group>"; };
+		BE14D5AA2CAD5F4900A283E6 /* ElixirContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirContentView.swift; sourceTree = "<group>"; };
+		BE14D5AE2CAD629000A283E6 /* ElixirViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirViewModel.swift; sourceTree = "<group>"; };
+		BE14D5B02CAD77CA00A283E6 /* ElixirDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirDetailsContentView.swift; sourceTree = "<group>"; };
+		BE14D5B22CAD7E4200A283E6 /* ElixirDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirDetails.swift; sourceTree = "<group>"; };
+		BE14D5B72CAE7BAB00A283E6 /* BaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContentView.swift; sourceTree = "<group>"; };
+		BE14D5B92CAEBB8300A283E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE14D6322CB018BD00A283E6 /* CustomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListCell.swift; sourceTree = "<group>"; };
+		BE14D6352CB0266F00A283E6 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		BE14D6382CB0290900A283E6 /* Wizards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wizards.xcdatamodel; sourceTree = "<group>"; };
+		BE14D63B2CB051A100A283E6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		BE14D63D2CB082AD00A283E6 /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		BE14D63F2CB082C600A283E6 /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE14D5862CAD204100A283E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE14D5D02CAFDAC200A283E6 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE14D5802CAD204100A283E6 = {
+			isa = PBXGroup;
+			children = (
+				BE14D58B2CAD204100A283E6 /* WizardsApp */,
+				BE14D58A2CAD204100A283E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE14D58A2CAD204100A283E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5892CAD204100A283E6 /* WizardsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE14D58B2CAD204100A283E6 /* WizardsApp */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D58C2CAD204100A283E6 /* WizardsAppApp.swift */,
+				BE14D63A2CB0519200A283E6 /* Helper */,
+				BE14D5B62CAE7B7F00A283E6 /* setupApp */,
+				BE14D5A82CAD5EEB00A283E6 /* Models */,
+				BE14D5A92CAD5F1F00A283E6 /* Views */,
+				BE14D5A12CAD2B8200A283E6 /* ViewModel */,
+				BE14D6342CB0264800A283E6 /* CoreDataHelper */,
+				BE14D5902CAD204300A283E6 /* Assets.xcassets */,
+				BE14D5952CAD204300A283E6 /* Persistence.swift */,
+				BE14D6372CB0290900A283E6 /* CoreDataWizards.xcdatamodeld */,
+				BE14D5922CAD204300A283E6 /* Preview Content */,
+				BE14D5B92CAEBB8300A283E6 /* LaunchScreen.storyboard */,
+			);
+			path = WizardsApp;
+			sourceTree = "<group>";
+		};
+		BE14D5922CAD204300A283E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5932CAD204300A283E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE14D5A12CAD2B8200A283E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5AD2CAD628800A283E6 /* ElixirAPI */,
+				BE14D5AC2CAD627800A283E6 /* WizardAPI */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE14D5A82CAD5EEB00A283E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D59F2CAD2A5D00A283E6 /* WizardModel.swift */,
+				BE14D5B22CAD7E4200A283E6 /* ElixirDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE14D5A92CAD5F1F00A283E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5B52CAE755600A283E6 /* Wizard */,
+				BE14D5B42CAE754600A283E6 /* Elixir */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE14D5AC2CAD627800A283E6 /* WizardAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5A22CAD2F6600A283E6 /* WizardViewModel.swift */,
+				BE14D5A42CAD592D00A283E6 /* WizardRepository.swift */,
+			);
+			path = WizardAPI;
+			sourceTree = "<group>";
+		};
+		BE14D5AD2CAD628800A283E6 /* ElixirAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5AE2CAD629000A283E6 /* ElixirViewModel.swift */,
+			);
+			path = ElixirAPI;
+			sourceTree = "<group>";
+		};
+		BE14D5B42CAE754600A283E6 /* Elixir */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5AA2CAD5F4900A283E6 /* ElixirContentView.swift */,
+				BE14D5B02CAD77CA00A283E6 /* ElixirDetailsContentView.swift */,
+			);
+			path = Elixir;
+			sourceTree = "<group>";
+		};
+		BE14D5B52CAE755600A283E6 /* Wizard */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D58E2CAD204100A283E6 /* WizardContentView.swift */,
+			);
+			path = Wizard;
+			sourceTree = "<group>";
+		};
+		BE14D5B62CAE7B7F00A283E6 /* setupApp */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D5B72CAE7BAB00A283E6 /* BaseContentView.swift */,
+				BE14D6322CB018BD00A283E6 /* CustomListCell.swift */,
+				BE14D63D2CB082AD00A283E6 /* ToastMessage.swift */,
+				BE14D63F2CB082C600A283E6 /* LoadingSpinner.swift */,
+			);
+			path = setupApp;
+			sourceTree = "<group>";
+		};
+		BE14D6342CB0264800A283E6 /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D6352CB0266F00A283E6 /* CoreDataHelper.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		BE14D63A2CB0519200A283E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BE14D63B2CB051A100A283E6 /* NetworkMonitor.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE14D5882CAD204100A283E6 /* WizardsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE14D59C2CAD204300A283E6 /* Build configuration list for PBXNativeTarget "WizardsApp" */;
+			buildPhases = (
+				BE14D5852CAD204100A283E6 /* Sources */,
+				BE14D5862CAD204100A283E6 /* Frameworks */,
+				BE14D5872CAD204100A283E6 /* Resources */,
+				BE14D5CD2CAFDA9900A283E6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WizardsApp;
+			packageProductDependencies = (
+				BE14D5CF2CAFDAC200A283E6 /* Swinject */,
+			);
+			productName = WizardsApp;
+			productReference = BE14D5892CAD204100A283E6 /* WizardsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE14D5812CAD204100A283E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BE14D5882CAD204100A283E6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BE14D5842CAD204100A283E6 /* Build configuration list for PBXProject "WizardsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE14D5802CAD204100A283E6;
+			packageReferences = (
+				BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			productRefGroup = BE14D58A2CAD204100A283E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE14D5882CAD204100A283E6 /* WizardsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE14D5872CAD204100A283E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE14D5BA2CAEBB8300A283E6 /* LaunchScreen.storyboard in Resources */,
+				BE14D5942CAD204300A283E6 /* Preview Assets.xcassets in Resources */,
+				BE14D5912CAD204300A283E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE14D5852CAD204100A283E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE14D5A02CAD2A5D00A283E6 /* WizardModel.swift in Sources */,
+				BE14D5A52CAD592D00A283E6 /* WizardRepository.swift in Sources */,
+				BE14D5962CAD204300A283E6 /* Persistence.swift in Sources */,
+				BE14D5B12CAD77CA00A283E6 /* ElixirDetailsContentView.swift in Sources */,
+				BE14D5B82CAE7BAB00A283E6 /* BaseContentView.swift in Sources */,
+				BE14D58F2CAD204100A283E6 /* WizardContentView.swift in Sources */,
+				BE14D6362CB0266F00A283E6 /* CoreDataHelper.swift in Sources */,
+				BE14D5AF2CAD629000A283E6 /* ElixirViewModel.swift in Sources */,
+				BE14D6392CB0290900A283E6 /* CoreDataWizards.xcdatamodeld in Sources */,
+				BE14D63C2CB051A100A283E6 /* NetworkMonitor.swift in Sources */,
+				BE14D5AB2CAD5F4900A283E6 /* ElixirContentView.swift in Sources */,
+				BE14D6332CB018BD00A283E6 /* CustomListCell.swift in Sources */,
+				BE14D63E2CB082AD00A283E6 /* ToastMessage.swift in Sources */,
+				BE14D5A32CAD2F6600A283E6 /* WizardViewModel.swift in Sources */,
+				BE14D6402CB082C600A283E6 /* LoadingSpinner.swift in Sources */,
+				BE14D5B32CAD7E4200A283E6 /* ElixirDetails.swift in Sources */,
+				BE14D58D2CAD204100A283E6 /* WizardsAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE14D59A2CAD204300A283E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE14D59B2CAD204300A283E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE14D59D2CAD204300A283E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WizardsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QVFP3WE862;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blueray.com.WizardsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BE14D59E2CAD204300A283E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WizardsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QVFP3WE862;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blueray.com.WizardsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE14D5842CAD204100A283E6 /* Build configuration list for PBXProject "WizardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE14D59A2CAD204300A283E6 /* Debug */,
+				BE14D59B2CAD204300A283E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE14D59C2CAD204300A283E6 /* Build configuration list for PBXNativeTarget "WizardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE14D59D2CAD204300A283E6 /* Debug */,
+				BE14D59E2CAD204300A283E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE14D5CF2CAFDAC200A283E6 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE14D5CE2CAFDAC200A283E6 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BE14D6372CB0290900A283E6 /* CoreDataWizards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE14D6382CB0290900A283E6 /* Wizards.xcdatamodel */,
+			);
+			currentVersion = BE14D6382CB0290900A283E6 /* Wizards.xcdatamodel */;
+			path = CoreDataWizards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE14D5812CAD204100A283E6 /* Project object */;
+}

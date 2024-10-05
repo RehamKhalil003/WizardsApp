@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ElixirEntity" representedClassName="ElixirEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="wizard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WizardEntity" inverseName="elixirs" inverseEntity="WizardEntity"/>
+    </entity>
+    <entity name="WizardEntity" representedClassName="WizardEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <relationship name="elixirs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ElixirEntity" inverseName="wizard" inverseEntity="ElixirEntity"/>
+    </entity>
+</model>
