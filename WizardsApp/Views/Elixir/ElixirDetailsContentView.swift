@@ -79,12 +79,11 @@ struct ElixirDetailsContentView: View {
             elixirViewModel.getElixirDetails(for: elixirId)
         }
     }
-
     private func customSeparator(color: Color = Color(UIColor.systemGray6)) -> some View {
         Rectangle()
             .frame(height: 1)
             .foregroundColor(color)
-            .padding(.leading, 24)
+            .padding(.leading, 23)
     }
 }
 
